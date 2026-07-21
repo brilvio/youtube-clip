@@ -1,0 +1,30 @@
+[project]
+name = "youtube-clip-tui"
+version = "0.1.0"
+description = "TUI para extrair trechos de vídeo e áudio do YouTube"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=3.0.0",
+    "yt-dlp>=2025.6.30",
+]
+
+[project.scripts]
+youtube-clip = "app:main"
+
+[dependency-groups]
+dev = ["pytest>=8.0.0", "ruff>=0.11.0"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["app", "core"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
