@@ -5,6 +5,13 @@ Uma interface de terminal para baixar apenas um trecho de um vídeo do YouTube e
 - vídeo em MP4;
 - áudio em MP3.
 
+## Interface
+
+<p align="center">
+  <img src="docs/screenshots/tui-dark.svg" alt="YouTube Clip TUI no tema Tokyo Night" width="49%">
+  <img src="docs/screenshots/tui-light.svg" alt="YouTube Clip TUI no tema claro" width="49%">
+</p>
+
 ## Executar
 
 ```bash
