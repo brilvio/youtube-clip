@@ -8,7 +8,8 @@ Uma interface de terminal para baixar apenas um trecho de um vídeo do YouTube e
 ## Executar
 
 ```bash
-cd /home/brilvio/projects/youtube-clip-tui
+git clone https://github.com/brilvio/youtube-clip.git
+cd youtube-clip
 uv run youtube-clip
 ```
 
@@ -18,8 +19,11 @@ URL e os timestamps inicial e final, como `1:00` e `1:30`. Os arquivos serão gr
 
 Use `Ctrl+T` para alternar entre os temas Tokyo Night, Catppuccin, Nord e claro.
 
-O FFmpeg é um pré-requisito do sistema. No Pop!_OS/Ubuntu, instale com
-`sudo apt install ffmpeg` caso ainda não esteja disponível.
+O FFmpeg é um pré-requisito do sistema. No Ubuntu e distribuições derivadas, instale com:
+
+```bash
+sudo apt install ffmpeg
+```
 
 ## Desenvolvimento
 
